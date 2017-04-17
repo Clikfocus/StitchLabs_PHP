@@ -12,26 +12,6 @@ class Variant {
   // Contains the Stitch instance for this Variant.
   public $stitch;
 
-  // // Variant fields
-  // public $archived;
-  // public $created_at;
-  // public $deleted;
-  // public $id;
-  // // Object Reference Fields
-  // public $links = array(
-  //   'Addresses' => array(),
-  //   'People' => array(),
-  //   'ContactTags' => array(),
-  //   'ContactTypes' => array('id' => '3689024'),
-  // );
-  // public $local_id;
-  // public $name;
-  // public $nature;
-  // public $notes;
-  // public $reseller;
-  // public $taxid;
-  // public $website;
-
   /**
    * Constructor, set the stitch object so that this object can interact
    * with Stitch.
@@ -123,7 +103,6 @@ class Variant {
         $variant_values,
       ),
     );
-    dpm($this);
 
     return $args;
   }
